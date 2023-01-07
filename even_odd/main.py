@@ -1,5 +1,4 @@
 
-menu = int(input("WELCOME EVEN OR ODD RANGE\nCHOOSE:\n1 - EVEN OR ODD\n2 - DIVISIBLE NUMBER\n3 - SUM TOTAL\n"))
 
 def evenOrOdd():
     list1 = [* range(int(input("First number of range: ")), int(input("Second number of range: "))+1, 1)]
@@ -34,9 +33,16 @@ def sumTotal():
         total += i
     print(total)
 
-if menu == 1:
-    evenOrOdd()
-elif menu == 2:
-    divisibleNumb()
-elif menu == 3:
-    sumTotal()
+def init():
+    menu = int(input("WELCOME EVEN OR ODD RANGE\nCHOOSE:\n1 - EVEN OR ODD\n2 - DIVISIBLE NUMBER\n3 - SUM TOTAL\n"))
+    if menu == 1:
+        evenOrOdd()
+    elif menu == 2:
+        divisibleNumb()
+    elif menu == 3:
+        sumTotal()
+    else:
+        print("invalid value!!")
+        init()
+
+init()
