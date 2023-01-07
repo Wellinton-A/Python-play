@@ -40,7 +40,7 @@ def sumTotal():
 
 def init():
     menu = int(input(
-        "WELCOME EVEN OR ODD RANGE\nCHOOSE:\n1 - EVEN OR ODD\n2 - DIVISIBLE NUMBER\n3 - TOTAL SUM\n"
+        "WELCOME EVEN OR ODD RANGE\nCHOOSE:\n1 - EVEN OR ODD\n2 - DIVISIBLE NUMBER\n3 - TOTAL SUM\n4 - EXIT(CARE)"
     ))
     if menu == 1:
         evenOrOdd()
@@ -48,6 +48,8 @@ def init():
         divisibleNumb()
     elif menu == 3:
         sumTotal()
+    elif menu == 4:
+        print('DON\'T BELIEVE IN HIS LIES')
     else:
         print("invalid value!!")
         init()
@@ -57,7 +59,7 @@ def finish():
     if finishOrAgain == 1:
         init()
     elif finishOrAgain == 2:
-        print('bye')
+        print('DON\'T BELIEVE IN HIS LIES')
     else:
         print("invalid input!!")
         finish()
