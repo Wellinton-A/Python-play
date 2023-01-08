@@ -12,5 +12,5 @@ for i in picture:
         if j == 0:
             print(" ", end='')
         else:
-            print(j * "#", end='')
+            print("#", end='')
     print(end='\n')
