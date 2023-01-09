@@ -2,6 +2,7 @@
 firstNumber = "First number of range: "
 secondNumber = "Second number of range: "
 
+
 def evenOrOdd():
     list1 = [* range(int(input(firstNumber)), int(input(secondNumber))+1, 1)]
     choose = (int(input("Choose \n 1 - Even \n 2 - Odd \n")))
@@ -20,6 +21,7 @@ def evenOrOdd():
     print(*list1, sep="-")
     finish()
 
+
 def divisibleNumb():
     list2 = [* range(int(input(firstNumber)), int(input(secondNumber))+1, 1)]
     divisibleNumber = int(input("Choose a number to be divisible: "))
@@ -30,6 +32,7 @@ def divisibleNumb():
     print(*list3, sep="-")
     finish()
 
+
 def sumTotal():
     list2 = [* range(int(input(firstNumber)), int(input(secondNumber))+1, 1)]
     total = 0
@@ -37,6 +40,7 @@ def sumTotal():
         total += i
     print(total)
     finish()
+
 
 def init():
     menu = int(input(
@@ -54,6 +58,7 @@ def init():
         print("invalid value!!")
         init()
 
+
 def finish():
     finishOrAgain = int(input("Choose:\n1 - Choose again\n2 - exit\n"))
     if finishOrAgain == 1:
@@ -63,5 +68,6 @@ def finish():
     else:
         print("invalid input!!")
         finish()
+
 
 init()

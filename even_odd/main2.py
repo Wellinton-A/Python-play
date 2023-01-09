@@ -13,4 +13,3 @@ print(id(list2))
 array1 = "!"
 
 print(array1.join("Wellinton"))
-
